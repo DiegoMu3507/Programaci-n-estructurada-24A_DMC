@@ -61,6 +61,12 @@ build CMakeFiles/Programacion_estructurada.dir/tarea_2.cpp.obj: CXX_COMPILER__Pr
   OBJECT_DIR = CMakeFiles\Programacion_estructurada.dir
   OBJECT_FILE_DIR = CMakeFiles\Programacion_estructurada.dir
 
+build CMakeFiles/Programacion_estructurada.dir/helloworld.cpp.obj: CXX_COMPILER__Programacion_estructurada_unscanned_Debug C$:/Users/diego/Desktop/Github/Programacion$ estructurada/helloworld.cpp || cmake_object_order_depends_target_Programacion_estructurada
+  DEP_FILE = CMakeFiles\Programacion_estructurada.dir\helloworld.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Programacion_estructurada.dir
+  OBJECT_FILE_DIR = CMakeFiles\Programacion_estructurada.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Programacion_estructurada
@@ -69,7 +75,7 @@ build CMakeFiles/Programacion_estructurada.dir/tarea_2.cpp.obj: CXX_COMPILER__Pr
 #############################################
 # Link the executable Programacion_estructurada.exe
 
-build Programacion_estructurada.exe: CXX_EXECUTABLE_LINKER__Programacion_estructurada_Debug CMakeFiles/Programacion_estructurada.dir/main.cpp.obj CMakeFiles/Programacion_estructurada.dir/tarea_2.cpp.obj
+build Programacion_estructurada.exe: CXX_EXECUTABLE_LINKER__Programacion_estructurada_Debug CMakeFiles/Programacion_estructurada.dir/main.cpp.obj CMakeFiles/Programacion_estructurada.dir/tarea_2.cpp.obj CMakeFiles/Programacion_estructurada.dir/helloworld.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Programacion_estructurada.dir

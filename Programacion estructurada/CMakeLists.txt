@@ -4,4 +4,4 @@ project(Programacion_estructurada)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Programacion_estructurada main.cpp
-        tarea_2.cpp)
+        tarea_2.cpp helloworld.cpp)

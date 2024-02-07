@@ -20,7 +20,6 @@ int main()
     string d = "Hola";
     bool e = true;
    //imprimir lso valores
-    cout << "Este es un programa que usa caracteres de escape y cadenas de control\n";
     cout << "El valor de a es %d  "<<a <<"\n";
     cout << "El valor de b es %fl " << b << "\n";
     cout << "El valor de c es %c " << c << "\n";
