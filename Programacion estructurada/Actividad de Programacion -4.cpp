@@ -10,47 +10,51 @@ Descripcion: Solicitar al usuario un valor, y la serie debe llegar a un valor ig
 El usuario va a elegir con qué ciclo debe trabajar
 El programa debe salir cuando el usuario lo indique*/
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 int main() // inicia el programa
 {
     char caso; // se declaran variables
     int finalizar = 1;
-    int contador = 0;
+    int n = 0;
+    int t1 = 1;
+    int t2 = 0;
     int i = 0;
     do // se habre un do while para poder repetir todo
     {
-
+        cout << "Dime el numero max de la serie que quieres realizar" << endl; // Pregunta cual numeros sera el maximo
+        cin >> n;
         cout << "For [a] While [b] Do while [c]" << endl; // pregunnta que se desea usar
         cin >> caso;
         switch (caso) // inicia el swich
         {
-        case 'a':                             // caso 1
-            for (i = 0; (i <= 10); i = i + 1) // imprimir del 0 al 10
+        case 'a': // caso for
+            for (i = 0; i <= n; i = t1 + t2)
             {
                 cout << i << endl;
+                t2 = t1;
+                t1 = i;
             }
             break;
         case 'b':
-            while (contador <= 10) // imprimir del 0 al 10
+            i = 0;
+            while (n >= i) // caso while
             {
-                for (i = 0; (i <= 10); i = i + 1)
-                {
-                    cout << i << endl;
-                    contador++;
-                }
+                cout << i << endl;
+                t2 = t1;
+                t1 = i;
+                i = t1 + t2;
             }
             break;
         case 'c':
-            do // imprimir del 0 al 10
+            i = 0;
+            do // caso do while
             {
-                for (i = 0; (i <= 10); i = i + 1)
-                {
-                    cout << i << endl;
-                }
-                contador++;
+                cout << i << endl;
+                t2 = t1;
+                t1 = i;
+                i = t2 + t1;
 
-            } while (contador <= 10);
+            } while (n >= i);
             break;
         default:
             cout << "No sabes leer o q ??" << endl; // mensaje en caso de no seleccionar ningun caso
