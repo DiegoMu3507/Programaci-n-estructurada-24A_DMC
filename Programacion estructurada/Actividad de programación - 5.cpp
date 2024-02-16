@@ -31,11 +31,16 @@ int main()
     int j = 0;
     int casilla, finalizar, suma, vaciar;
 
-    do // se habre el do para finalizar cuando se quiera
+    do // se abre el do para finalizar cuando se quiera
     {
-        cout << "Que casilla quieres llenar " << endl;
+        cout << "Que casilla quieres llenar o presiona 0 para vaciar el arreglo" << endl;
         cin >> casilla;
-        if (casilla == 1) // seleccion de casilla en cada lugar
+        if (casilla == 0) // opción para vaciar el arreglo
+        {
+            a = b = c = d = e = f = g = h = i = j = 0;
+            cout << "El arreglo ha sido vaciado." << endl;
+        }
+        else if (casilla == 1) // seleccion de casilla en cada lugar
         {
             cout << "Dame el valor para la casilla 1 " << endl;
             cin >> a;
