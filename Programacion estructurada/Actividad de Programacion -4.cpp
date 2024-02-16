@@ -1,7 +1,7 @@
 /*Presentacíon
 Diego Muñoz Cisneros
 06/02/2024
-Nombre: Actividad de programación - 3
+Nombre: Actividad de programación - 4
 Centro Universitario De los Altos
 Ing en computacion/2do semestre
 Profesor:
